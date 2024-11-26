@@ -26,9 +26,9 @@ function Cube(element, index, array){
 
 
 
-let fruits = ["BANANA", "APPLE", "ORANGE", "GUAVA"]
+let fruits = ["banana", "apple", "orange", "guava"]
 
-fruits.forEach(lowerCase)
+fruits.forEach(capitalize)
 fruits.forEach(Display)
 
 function upperCase(element, index, array){
@@ -38,6 +38,10 @@ function upperCase(element, index, array){
 
 function lowerCase(element, index, array){
     array[index] = element.toLowerCase()
+}
+
+function capitalize(element, index, array){
+    array[index] = element.charAt(0).toUpperCase() + element.slice(1)
 }
 
 
