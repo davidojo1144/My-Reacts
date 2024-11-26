@@ -3,16 +3,16 @@
 //     console.log(result)
 // }
 
-function sum(callBack, number1, number2){
+function Sum(callback, number1, number2){
     let result = number1 + number2;
-    callBack(result)
+    callback(result)
 }
 
 function  DisplayPage(result){
     document.getElementById("myH1").textContent = result;
 }
 
-sum(DisplayPage, 40,50)
+Sum(DisplayPage, 40,50)
 
 
 export default DisplayPage
