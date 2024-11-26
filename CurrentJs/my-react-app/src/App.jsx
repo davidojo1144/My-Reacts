@@ -5,7 +5,7 @@ import Card from "./Card.jsx"
 import DisplayPage from "./Work.jsx"
 import Display from "./ForEach.jsx"
 
-function App() {
+function App(){
   return (
     <>
       <Header/>
