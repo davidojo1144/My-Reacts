@@ -39,7 +39,7 @@ const SignUp = () => {
   // function name(param) {}
 
   return (
-    <div>
+    <div className={style.border}>
       <form onSubmit={handleSubmit} action = "">
         <div>
           <input
@@ -47,7 +47,7 @@ const SignUp = () => {
             name="Username"
             className={style.input}
             onChange={handleChange}
-            placeholder="Enter username"
+            placeholder="Enter username..."
             required
           />
         </div>
@@ -57,7 +57,7 @@ const SignUp = () => {
             name="Email"
             className= {style.input}
             onChange={handleChange}
-            placeholder="Enter your Email"
+            placeholder="Enter your Email..."
             required
           />
         </div>
@@ -65,7 +65,7 @@ const SignUp = () => {
           <input
             type="password"
             name="Password"
-            className="input"
+            className={style.pass}
             placeholder="Enter Password"
             onChange={handleChange}
             required
@@ -74,8 +74,8 @@ const SignUp = () => {
         <CustomButton style={style.btn}  type="Submit" textContent="Submit"/>
       </form>
       <div>
-        <span>Already have an account?</span>
-        <span><Link to={'/Login'}>Login</Link></span>
+        <span className={style.spa}>Already have an account? </span>
+        <span><Link to={'/Login'} className={style.log}>Login</Link></span>
       </div>
     </div>
   );

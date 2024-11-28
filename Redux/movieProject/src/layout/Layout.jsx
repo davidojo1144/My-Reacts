@@ -11,10 +11,9 @@ const Layout = ()=>{
         <>
             <Header/>
             <div className={style.outletContainer}>
-                <SideBar/>
+                <SideBar className={style.myside}/>
                 <Outlet/>
             </div>
-            
             <Footer/>
         </>
     )

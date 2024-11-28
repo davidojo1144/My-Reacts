@@ -22,7 +22,7 @@ const Login = () =>{
 
 
   return(
-    <div>
+    <div className={style.border}>
       <form action="">
       <div>
           <input
@@ -38,7 +38,7 @@ const Login = () =>{
           <input
             type="password"
             name="Password"
-            className="input"
+            className={style.pass}
             placeholder="Enter Password"
             onChange={handleChange}
             required

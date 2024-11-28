@@ -1,0 +1,58 @@
+.mainContainer{
+    display: flex;
+    background-color: grey;
+    align-items: center;
+}
+
+
+.secondContainer{
+    width: 100%;
+    padding-left: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.myinput{
+    width: 280px;
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.movie{
+    padding-left: 90px;
+    color:black;
+}
+
+.btn{
+    
+    background-color: green;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 5px;
+}
+
+.btn::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0;
+    transition: 0.1s width linear;
+    margin: 0 auto;
+  }
+
+  .btn:hover::after {
+    width: 100%;
+  }
+
+  .btn:hover {
+    filter: brightness(120%);
+    box-shadow: 10px 10px 10px #000;
+  }
+  
+  .btn:active {
+    box-shadow: inset 2px 2px 10px #000;
+  }
